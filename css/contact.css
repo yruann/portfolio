@@ -1,0 +1,11 @@
+li img, li p {
+    display: inline-block;
+}
+li p {
+    position: relative;
+    top: 2px;
+    left: 10px;
+}
+ul {
+    list-style: none;
+}
