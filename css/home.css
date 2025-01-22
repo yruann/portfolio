@@ -1,0 +1,49 @@
+.work {
+    margin-bottom: 10%;
+}
+
+img {
+    position: absolute;
+    /* display: box;
+    width: 30%;
+    height: auto; */
+    margin: 2%;
+
+}
+img:hover{
+    -webkit-filter: drop-shadow(.25px .25px 0 black)
+    drop-shadow(-.25px -.25px 0 black);
+    filter: drop-shadow(.25px .25px 0 black) 
+    drop-shadow(-.25px -.25px 0 black);
+}
+
+/* fabric wall */
+ #media-2 {
+    width: 30vw;
+    margin: 0 0 0 5vw;
+ }
+ #media-2:hover {
+    width: 31vw;
+    z-index: 2;
+ }
+
+ /* hand */
+ #media-1 {
+    width: 13vw;
+     margin: 12vw 0 10vw 0;
+ }
+ #media-1:hover {
+    width: 14vw;
+    z-index: 2;
+
+ }
+
+/* wires */
+ #media-3 {
+    width: 15vw;
+     margin: 18vw 0 20vw 15vw;
+ }
+ #media-3:hover {
+    width: 16vw;
+    z-index: 2;
+ }

@@ -1,12 +1,15 @@
 /* general */
-body, a {
+body{
 	background-color: white;
 	color: #2D2C31;
 	font-family: 'DotGothic16';
 	font-size: 16px;
 	line-height: 1;
-	margin: 7% auto;
+	margin: 10vh auto;
 	width: 75%;
+}
+a {
+	color: #2D2C31;
 }
 
 h1 {
@@ -19,8 +22,10 @@ h1 {
 
 /* header */
 #title {
+	background-color: white;
 	font-size: 20px;
 	text-decoration: none;
+	margin: 5px;
 }
 #title:hover {
 	text-decoration: underline;
@@ -29,11 +34,27 @@ h1 {
 header {
 	background-color: whitesmoke;
 	position: fixed;
-	width: 15%;
+	width: 15vw;
 	padding: 1%;
 	border: .5px solid #2D2C31;
 	display: inline-block;
+	height: 81vh;
 	vertical-align: middle;
+}
+header > div {
+	position: fixed;
+	width: 15vw;
+	min-height: 20vh;
+	max-height: 78vh;
+	overflow: hidden;
+}
+nav {
+	min-height: 20vh;
+	max-height: 78vh;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 15vw;
+	padding-right: 7%;
 }
 
 nav > div {
@@ -121,11 +142,11 @@ main {
 }
 
 #head-box {
-	height: 10%;
+	height: 10vh;
 	top: 0;
 }
 #foot-box {
-	height: 5%;
+	height: 2.5vh;
 	bottom: 0;
 }
 
@@ -143,7 +164,7 @@ main {
 video.hover-media {
 	max-width: 100%;
 }
-/*  */
+/* media */
 .work {
     margin-bottom: 10%;
 }
@@ -153,6 +174,52 @@ video.hover-media {
     height: auto;
     margin: 1.2%;
 }
-video {
-    width: 90%;
+video, iframe {
+    width: 40vw;
+	height: 22.5vw;
+}
+
+
+
+/* responsive design */
+/* @media screen and (max-width: 1400px) {
+	#foot-box {
+		display: none;
+	}
+} */
+@media screen and (max-width: 1200px) {
+	body {
+		width: 80%;
+	}
+	header {
+		width: 20vw;
+	}
+	header > div {
+		width: 20vw;
+
+	}
+	nav {
+		width: 20vw;
+	}
+	main {
+		/* top: 15%; */
+		left: 40%;
+		width: 50%;
+	}
+	.media-container img {
+		width: 40%;
+	}
+	video, iframe {
+		width: 50vw;
+		height: 28.125vw;
+	}
+}
+@media screen and (max-width: 900px) {
+	div ul{
+		list-style: none;
+		padding: 2% 0 0 10%;
+	}
+	.content li {
+		padding: 2%;
+	}
 }
