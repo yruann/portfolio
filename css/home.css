@@ -30,7 +30,7 @@ img:hover{
  /* hand */
  #media-1 {
     width: 13vw;
-     margin: 12vw 0 10vw 0;
+    margin: 12vw 0 10vw 0;
  }
  #media-1:hover {
     width: 14vw;
@@ -41,9 +41,19 @@ img:hover{
 /* wires */
  #media-3 {
     width: 15vw;
-     margin: 18vw 0 20vw 15vw;
+    margin: 27vw 0 20vw 18vw;
  }
  #media-3:hover {
+    width: 16vw;
+    z-index: 2;
+ }
+
+ /* braclet */
+ #media-4 {
+    width: 15vw;
+    margin: 15vw 0 20vw 12vw;
+ }
+ #media-4:hover {
     width: 16vw;
     z-index: 2;
  }
