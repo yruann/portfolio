@@ -1,0 +1,158 @@
+/* general */
+body, a {
+	background-color: white;
+	color: #2D2C31;
+	font-family: 'DotGothic16';
+	font-size: 16px;
+	line-height: 1;
+	margin: 7% auto;
+	width: 75%;
+}
+
+h1 {
+	font-size: 20px;
+	font-weight: normal;
+	/* font-style: oblique; */
+	text-decoration: underline;
+	letter-spacing: 0.2ch;
+}
+
+/* header */
+#title {
+	font-size: 20px;
+	text-decoration: none;
+}
+#title:hover {
+	text-decoration: underline;
+}
+
+header {
+	background-color: whitesmoke;
+	position: fixed;
+	width: 15%;
+	padding: 1%;
+	border: .5px solid #2D2C31;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+nav > div {
+	list-style-image: url('../img/icons/folder.png');
+	list-style-position: inside;
+	padding-left: 7%;
+	line-height: 1.75;
+	display: inline-block;
+	margin-top: 5%;
+}
+li a {
+	text-decoration: none;
+}
+a:hover, li span:hover {
+ 	text-decoration: underline;
+}
+
+.collapsible {
+	background-color: whitesmoke;
+	color: #2D2C31;
+	font-family: 'DotGothic16';
+	font-size: 16px;
+	line-height: 1;
+	cursor: pointer;
+	border: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+li span {
+	background-color: white;
+	position: relative;
+	top: -5px;
+}
+
+div ul {
+	list-style-image: url('../img/icons/file.png');
+	list-style-position: outside;
+	padding-left: 27%;
+	line-height: 1.3;
+	display: none;
+	overflow: hidden;
+}
+.content {
+	display: inline-block;
+	margin: 0;
+}
+
+div ul li {
+	margin-bottom: 2.5%;
+	padding: 0 2%;
+	background-color: white;
+	color: #2D2C31;
+	border: .5px solid #2D2C31;
+}
+ul li a {
+	position: relative;
+	top: -5px;
+}
+#selected {
+	font-weight: bold;
+	color:rgb(105, 108, 209);
+	text-decoration: underline;
+}
+
+/* main content */
+main {
+	position: absolute;
+	top: 15%;
+	left: 35%;
+	width: 50%;
+}
+
+#center{
+	padding-top: 10%;
+}
+
+/* head/foot box */
+#head-box, #foot-box {
+	position: fixed;
+	width: 100%;
+	z-index: 2;
+	background-color: white;
+}
+
+#head-box {
+	height: 10%;
+	top: 0;
+}
+#foot-box {
+	height: 5%;
+	bottom: 0;
+}
+
+/* other */
+.hover-media{
+	margin-left: 5%;
+	width: 40%;
+	height: 250px;
+	background-color: white;
+	border: 0px;
+	display: none;
+	object-fit: cover;
+}
+
+video.hover-media {
+	max-width: 100%;
+}
+/*  */
+.work {
+    margin-bottom: 10%;
+}
+
+.media-container img {
+    width: 30%;
+    height: auto;
+    margin: 1.2%;
+}
+video {
+    width: 90%;
+}
