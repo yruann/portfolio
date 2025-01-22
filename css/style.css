@@ -38,19 +38,19 @@ header {
 	padding: 1%;
 	border: .5px solid #2D2C31;
 	display: inline-block;
-	height: 81vh;
+	height: 82vh;
 	vertical-align: middle;
 }
 header > div {
 	position: fixed;
 	width: 15vw;
 	min-height: 20vh;
-	max-height: 81vh;
+	max-height: 82vh;
 	overflow: hidden;
 }
 nav {
 	min-height: 20vh;
-	max-height: 78vh;
+	max-height: 80vh;
 	overflow-y: scroll;
 	overflow-x: hidden;
 	width: 15vw;
