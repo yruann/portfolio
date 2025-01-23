@@ -183,22 +183,33 @@ video, iframe {
 	height: 22.5vw;
 }
 
+/* change font box */
 #font-box {
 	position: fixed;
-	top: 45vw;
-	left: 70vw;
+	top: 78vh;
+	right: 1vw;
 	width: 150px;
+	padding: 1%;
 	z-index: 5;
 	background-color: whitesmoke;
 	border: .5px solid #2D2C31;
 }
+#font-box p {
+	margin: 0 0 2% 0;
+	padding: 5% 0 5% 0;
+}
+
 #font-box button {
-	margin: 5%;
+	margin-bottom: 5%;
+	padding: 2%;
 	background-color: white;
 	color:#2D2C31;
 	border: .5px solid #2D2C31;
+	display: block;
 }
-
+#font-box button:hover {
+	text-decoration: underline;
+}
 
 /* responsive design */
 /* @media screen and (max-width: 1400px) {
