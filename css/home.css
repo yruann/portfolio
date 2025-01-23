@@ -57,3 +57,10 @@ img:hover{
     width: 16vw;
     z-index: 2;
  }
+
+ #caption {
+    position: relative;
+    top: 42vw;
+    left: 9vw;
+    padding-bottom: 5%;
+}

@@ -12,3 +12,23 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
+function applyStoredFont() {
+  const storedFont = localStorage.getItem('fontFamily');
+  if (storedFont) {
+    // Apply the stored font to all elements with the "fontchange" class
+    document.querySelectorAll('.fontchange').forEach(element => {
+      element.style.fontFamily = storedFont;
+    });
+  }
+}
+
+function changeFont(fontFamily) {
+  // Save the selected font to localStorage
+  localStorage.setItem('fontFamily', fontFamily);
+
+  // Apply the font immediately to the current page
+  document.querySelectorAll('.fontchange').forEach(element => {
+    element.style.fontFamily = fontFamily;
+  });
+}
