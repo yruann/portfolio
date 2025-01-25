@@ -11,9 +11,9 @@ body{
 a {
 	color: #2D2C31;
 }
-*, *:hover{
+/* *, *:hover{
 	cursor: url('../img/icons/cursor.png'), auto;
-}
+} */
 h1 {
 	font-size: 20px;
 	font-weight: normal;
