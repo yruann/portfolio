@@ -16,6 +16,27 @@ img:hover{
     filter: drop-shadow(.25px .25px 0 black) 
     drop-shadow(-.25px -.25px 0 black);
 }
+/* window */
+/* #window {
+   background-color: #f5f5f5;
+   width: 40vw;
+   height: 70vh;
+   padding: 5%;
+   margin-bottom: 2vh;
+   border: .5px solid #2D2C31;
+}
+
+.window-bar div{
+   display: inline;
+   margin: 0;
+   padding: 0% 4% 0% 4%;
+   background-color: #ffffff;
+   border: .5px solid #2D2C31;
+}
+.window-bar {
+   width: 7vw;
+   top: .5vh;
+} */
 
 /* fabric wall */
  #media-2 {
@@ -29,38 +50,39 @@ img:hover{
 
  /* hand */
  #media-1 {
-    width: 13vw;
-    margin: 12vw 0 10vw 0;
+    width: 14vw;
+    margin: 21vh 0 0 0;
  }
  #media-1:hover {
-    width: 14vw;
+    width: 15vw;
     z-index: 2;
 
  }
 
 /* wires */
  #media-3 {
-    width: 15vw;
-    margin: 27vw 0 20vw 18vw;
+    width: 17vw;
+    margin: 40vh 0 0 18vw;
  }
  #media-3:hover {
-    width: 16vw;
+    width: 18vw;
     z-index: 2;
  }
 
- /* braclet */
+ /* bracelet */
  #media-4 {
-    width: 15vw;
-    margin: 15vw 0 20vw 12vw;
+    width: 16vw;
+    margin: 20vh 0 0 12vw;
  }
  #media-4:hover {
-    width: 16vw;
+    width: 17vw;
     z-index: 2;
  }
 
  #caption {
     position: relative;
-    top: 42vw;
-    left: 9vw;
+    top: 71vh;
+    left: 0vw;
     padding-bottom: 5%;
+    z-index: 3;
 }

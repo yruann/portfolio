@@ -1,6 +1,6 @@
 /* general */
 body{
-	background-color: white;
+	background-color: #ffffff;
 	color: #2D2C31;
 	font-family: 'DotGothic16';
 	font-size: 16px;
@@ -21,7 +21,7 @@ h1 {
 }
 
 button {
-	background-color: whitesmoke;
+	background-color: #f5f5f5;
 	color: #2D2C31;
 	font-family: 'DotGothic16';
 	font-size: 16px;
@@ -32,7 +32,7 @@ button {
 
 /* header */
 #title {
-	background-color: white;
+	background-color: #ffffff;
 	font-size: 20px;
 	text-decoration: none;
 	margin: 5px;
@@ -42,7 +42,7 @@ button {
 }
 
 header {
-	background-color: whitesmoke;
+	background-color: #f5f5f5;
 	position: fixed;
 	width: 15vw;
 	padding: 1%;
@@ -90,7 +90,7 @@ a:hover, li span:hover {
 }
 
 li span {
-	background-color: white;
+	background-color: #ffffff;
 	position: relative;
 	top: -5px;
 }
@@ -111,7 +111,7 @@ div ul {
 div ul li {
 	margin-bottom: 2.5%;
 	padding: 0 2%;
-	background-color: white;
+	background-color: #ffffff;
 	color: #2D2C31;
 	border: .5px solid #2D2C31;
 }
@@ -142,7 +142,7 @@ main {
 	position: fixed;
 	width: 100%;
 	z-index: 2;
-	background-color: white;
+	background-color: #ffffff;
 }
 
 #head-box {
@@ -159,7 +159,7 @@ main {
 	margin-left: 5%;
 	width: 40%;
 	height: 250px;
-	background-color: white;
+	background-color: #ffffff;
 	border: 0px;
 	display: none;
 	object-fit: cover;
@@ -186,23 +186,23 @@ video, iframe {
 /* change font box */
 #font-box {
 	position: fixed;
-	top: 78vh;
+	top: 76vh;
 	right: 1vw;
 	width: 150px;
 	padding: 1%;
 	z-index: 5;
-	background-color: whitesmoke;
+	background-color: #f5f5f5;
 	border: .5px solid #2D2C31;
 }
 #font-box p {
-	margin: 0 0 2% 0;
+	margin: 2% 0 2% 0;
 	padding: 5% 0 5% 0;
 }
 
 #font-box button {
 	margin-bottom: 5%;
 	padding: 2%;
-	background-color: white;
+	background-color: #ffffff;
 	color:#2D2C31;
 	border: .5px solid #2D2C31;
 	display: block;
