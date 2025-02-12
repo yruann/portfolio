@@ -1,6 +1,7 @@
 var coll = document.getElementsByClassName("collapsible");
 var i;
 
+// collapsible button
 for (i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
@@ -12,11 +13,11 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
-
+// change font
 function applyStoredFont() {
   const storedFont = localStorage.getItem('fontFamily');
   if (storedFont) {
-    // Apply the stored font to all elements with the "fontchange" class
+    // apply stored font to "fontchange" class
     document.querySelectorAll('.fontchange').forEach(element => {
       element.style.fontFamily = storedFont;
     });
@@ -24,11 +25,12 @@ function applyStoredFont() {
 }
 
 function changeFont(fontFamily) {
-  // Save the selected font to localStorage
+  // save selected font to localStorage
   localStorage.setItem('fontFamily', fontFamily);
 
-  // Apply the font immediately to the current page
+  // apply font to current page
   document.querySelectorAll('.fontchange').forEach(element => {
     element.style.fontFamily = fontFamily;
   });
 }
+
