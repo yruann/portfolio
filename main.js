@@ -34,3 +34,25 @@ function changeFont(fontFamily) {
   });
 }
 
+
+function recompose() {
+  const images = document.querySelectorAll('.media');
+  
+  images.forEach(img => {
+      // random ranges
+      let width = Math.random() * 20 + 10;
+      let topMargin = Math.random() * 30;
+      let leftMargin = Math.random() * 30;
+      let zIndex = Math.floor(Math.random() * 20) + 2;
+
+      // apply styles
+      img.style.width = `${width}vw`;
+      img.style.marginTop = `${topMargin}vh`;
+      img.style.marginLeft = `${leftMargin}vw`;
+      img.style.zIndex = zIndex;
+
+      img.style.marginRight = "0";
+      img.style.marginBottom = "0";
+      img.style.display = "inline-block";
+  });
+}
