@@ -2,19 +2,23 @@
     margin-bottom: 10%;
 }
 
-img {
+.media {
     position: absolute;
     /* display: box;
     width: 30%;
     height: auto; */
     margin: 2%;
-
 }
+.n {
+   display: none;
+}
+
 img:hover{
-    -webkit-filter: drop-shadow(.25px .25px 0 black)
-    drop-shadow(-.25px -.25px 0 black);
-    filter: drop-shadow(.25px .25px 0 black) 
-    drop-shadow(-.25px -.25px 0 black);
+    -webkit-filter: drop-shadow(3px 3px 0px #f5f5f5)
+    drop-shadow(-3px -3px 0px #f5f5f5);
+    filter: drop-shadow(3px 3px 0px #f5f5f5) 
+    drop-shadow(-3px -3px 0px #f5f5f5);
+    z-index: 28;
 }
 /* window */
 /* #window {
@@ -38,51 +42,90 @@ img:hover{
    top: .5vh;
 } */
 
+#recomp {
+	position: fixed;
+	top: 72vh;
+	right: 7vw;
+	background-color: #ffffff;
+	color:#2D2C31;
+	border: .5px solid #2D2C31;
+	display: block;
+   z-index: 31;
+   padding: 3px;
+}
+
 /* fabric wall */
- #media-2 {
+
+ #m2 {
     width: 30vw;
     margin: 0 0 0 5vw;
  }
- #media-2:hover {
-    width: 31vw;
-    z-index: 2;
- }
 
  /* hand */
- #media-1 {
+ #m1 {
     width: 14vw;
     margin: 21vh 0 0 0;
  }
- #media-1:hover {
-    width: 15vw;
-    z-index: 2;
-
- }
 
 /* wires */
- #media-3 {
+ #m3 {
     width: 17vw;
     margin: 40vh 0 0 18vw;
  }
- #media-3:hover {
-    width: 18vw;
-    z-index: 2;
- }
 
  /* bracelet */
- #media-4 {
+ #m4 {
     width: 16vw;
     margin: 20vh 0 0 12vw;
- }
- #media-4:hover {
-    width: 17vw;
-    z-index: 2;
  }
 
  #caption {
     position: relative;
     top: 71vh;
     left: 0vw;
-    padding-bottom: 5%;
-    z-index: 3;
+    z-index: 30;
+    background-color: #ffffff;
+    display: inline-block;
+}
+
+/* .container {
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #000;
+} */
+.words, .sentence {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.word {
+   padding: 3px 7px;
+   border: 1px solid #000;
+   background-color: rgba(255,255,255,.65);
+   cursor: pointer;
+}
+.word-bank {
+   display: inline-block;
+   /* width: 30%; */
+}
+#word-bank-selection{
+   padding: 10px;
+   position: relative;
+   top: 90vh;
+   z-index: 30;
+   background-color: rgba(255,255,255,.4);
+   border: 1px solid rgba(0,0,0,.4);
+}
+#sentence-container{
+   position: relative;
+   top: 40vh;
+   z-index: 30;
+   width: 80%;
+   text-align: center;
+}
+#head-box, #foot-box {
+   display: none;
+}
+h1{
+   text-decoration: none;
 }
