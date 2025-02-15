@@ -18,7 +18,7 @@ img:hover{
     drop-shadow(-3px -3px 0px #f5f5f5);
     filter: drop-shadow(3px 3px 0px #f5f5f5) 
     drop-shadow(-3px -3px 0px #f5f5f5);
-    z-index: 30;
+    z-index: 28;
 }
 /* window */
 /* #window {
@@ -83,7 +83,49 @@ img:hover{
     position: relative;
     top: 71vh;
     left: 0vw;
-    z-index: 35;
+    z-index: 30;
     background-color: #ffffff;
     display: inline-block;
+}
+
+/* .container {
+   padding: 20px;
+   margin: 10px;
+   border: 1px solid #000;
+} */
+.words, .sentence {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+.word {
+   padding: 3px 7px;
+   border: 1px solid #000;
+   background-color: rgba(255,255,255,.65);
+   cursor: pointer;
+}
+.word-bank {
+   display: inline-block;
+   /* width: 30%; */
+}
+#word-bank-selection{
+   padding: 10px;
+   position: relative;
+   top: 90vh;
+   z-index: 30;
+   background-color: rgba(255,255,255,.4);
+   border: 1px solid rgba(0,0,0,.4);
+}
+#sentence-container{
+   position: relative;
+   top: 40vh;
+   z-index: 30;
+   width: 80%;
+   text-align: center;
+}
+#head-box, #foot-box {
+   display: none;
+}
+h1{
+   text-decoration: none;
 }

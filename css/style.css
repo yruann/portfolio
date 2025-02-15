@@ -152,6 +152,7 @@ main {
 	width: 100%;
 	z-index: 2;
 	background-color: #ffffff;
+	z-index: 35;
 }
 
 #head-box {

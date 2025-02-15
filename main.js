@@ -13,6 +13,7 @@ for (i = 0; i < coll.length; i++) {
     }
   });
 }
+
 // change font
 function applyStoredFont() {
   const storedFont = localStorage.getItem('fontFamily');

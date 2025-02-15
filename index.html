@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link href="https://fonts.googleapis.com/css?family=DotGothic16" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Syne+Mono" rel="stylesheet" />
+		<script defer src="script.js"></script>
 	</head>
 
 	<body class="fontchange">
@@ -44,7 +45,10 @@
 		</header>
 
 		<main>
-			<p>click on an item in the sidebar to get started!</p>
+			<h1>scroll down to compose!</h1>
+			<div id="sentence-container" class="container">
+				<div id="sentence" class="sentence"></div>
+			</div>
 			<div class="home-media">
 				<img id="m1" class="media" src="img/home/1.png">
 				<img id="m2" class="media" src="img/home/2.png">
@@ -58,7 +62,19 @@
 				<img class="n media" src="img/home/10.png">
 				<img class="n media" src="img/home/11.png">
 			</div>
-			<p id="caption">(collage of current textile work !)</p>
+			<div id="word-bank-selection" class="container">
+				<h1>all the words</h1>
+				<div class="word-bank">
+					<div id="w1" class="words"></div>
+				</div>
+				<div class="word-bank">
+					<div id="w2" class="words"></div>
+				</div>
+				<div class="word-bank">
+					<div id="w3" class="words"></div>
+				</div>
+			</div>
+			<!-- <p id="caption">(collage of current textile work !)</p> -->
 		</main>
 		<footer>
 			<div id="foot-box"></div>
