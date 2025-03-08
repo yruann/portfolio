@@ -4,13 +4,15 @@ body{
 	color: #2D2C31;
 	font-family: 'DotGothic16';
 	font-size: 16px;
+	letter-spacing: 0.115ch;
 	line-height: 1;
 	margin: 10vh auto;
 	width: 75%;
 }
 p, ul{
-	line-height: 1.15;
-	margin-bottom: 2%;
+	line-height: 1.2;
+	/* margin-bottom: 2%; */
+	margin: 0 0 3% 0;
 }
 a {
 	color: #2D2C31;
@@ -19,11 +21,17 @@ a {
 	cursor: url('../img/icons/cursor.png'), auto;
 } */
 h1 {
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: normal;
 	/* font-style: oblique; */
 	text-decoration: underline;
-	letter-spacing: 0.2ch;
+}
+h3 {
+	color:rgb(85, 90, 230);
+	text-decoration: underline;
+	font-size: 18px;
+	margin: 0 0 1% 0;
+	padding: 0;
 }
 
 button {
@@ -180,11 +188,20 @@ main {
 video.hover-media {
 	max-width: 100%;
 }
+
+.add-text {
+	top: 0;
+ 	width: 60%;
+	display: inline-block;
+}
+
 /* media */
 .work {
     margin-bottom: 10%;
 }
-
+.media-container{
+	top:0;
+}
 .media-container img {
     width: 30%;
     height: auto;
@@ -193,6 +210,14 @@ video.hover-media {
 video, iframe {
     width: 40vw;
 	height: 22.5vw;
+}
+.full-img {
+	width: 100%;
+	border-radius: 37px;
+
+}
+.phone {
+	border-radius: 37px;
 }
 
 /* change font box */
