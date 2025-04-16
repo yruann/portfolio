@@ -140,7 +140,8 @@ div .content li {
 
 .content:nth-child(4) li:nth-child(1),
 .content:nth-child(4) li:nth-child(2),
-.content:nth-child(4) li:nth-child(3){
+.content:nth-child(4) li:nth-child(3),
+.content:nth-child(4) li:nth-child(4){
 	list-style-image: url('../img/icons/link.png');
 }
 
