@@ -1,118 +1,700 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-    	<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>evar.ware case study</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
 
-    	<title>uiux</title>
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
 
-    	<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link href="https://fonts.googleapis.com/css?family=DotGothic16" rel="stylesheet" />
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
-	</head>
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
 
-	<body class="fontchange">
-		<div id="head-box"></div>
-		<header>
-			<div>
-				<a id="title" href="index.html"><em>ying ruan</em></a>
-				<nav>
-					<div>
-						<button type="button" class="collapsible fontchange"><li><span>visual art</span></li></button>
-						<ul class="content">
-							<li><a href="thesis.html">BA thesis</a></li>
-							<li><a href="posthuman.html">a posthuman reconstruction</a></li>
-							<li><a href="addition.html">additional works</a></li>
-						</ul>
-						<button type="button" class="collapsible fontchange"><li><span>ui/ux, web design</span></li></button>
-						<ul class="content">
-							<li><a href="https://allwallsfall.com/" target="_blank">ALL WALLS FALL</a></li>
-							<li><a id="selected" href="https://yingruan.notion.site/evar-ware-case-study-1a60870a87568070953ee9bb2683f2f2?pvs=4" target="_blank">evar.ware </a></li>
-							<li><a href="https://ucjhistory.com/" target="_blank">Chicago Journal of History</a></li>
-							<li><a href="https://housecomfort.us/" target="_blank">House Comfort</a></li>
-							<li><a href="melo.html">melo</a></li>
-						</ul>
-						<button type="button" class="collapsible fontchange"><li><span>fashion</span></li></button>
-						<ul class="content">
-							<li><a href="recompose.html">compose, decompose, recompose</a></li>
-							<li><a href="vessel.html">visceral binaries of the female vessel</a></li>
-						</ul>
-						<li><a href="contact.html"><span>contact</span></a></li>
-					</div>
-				</nav>
-			</div>
-		</header>
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
 
-		<main>
-			<img class="full-img" src="img/uiux/evarware/logo.png" alt="image of evar.ware app logo">
-            <div class="work">
-				<h1><b>Project Overview</b></h1>
-				<div class="media-container">
-					<img class="full-img phone" src="img/uiux/evarware/home.png" alt="image of evar.ware app home page">
-					<div class="add-text">
-						<h3><b>Introduction</b></h3>
-						<p>“Evar.ware“ is a music events app that combines informational, ticketing, and social aspects into one app. It aims to give newcomers and regular ravers alike the opportunity to form and engage in communities, and share music in a way that is safe and fun.</p>
-						<h3><b>My Role</b></h3>
-						<p>UX/UI Design, Research, Visual design, Prototyping, Testing</p>
-						<h3><b>Tools</b></h3>
-						<p>Figma, Zoom, Google Forms</p>
-						<h3><b>Goal</b></h3>
-						<p>The goal of this case study was to make a hi-fidelity prototype of an events app. In local rave communities, the informational, ticketing and social aspects are disconnected. Also, there are many miscommunications between event goers and promoters. The target audience is local music event goers and collectives. Newcomers to the local events scene were important because the barrier to entry can oftentimes be daunting. </p>
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
 
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
 
-					</div>
-				</div>
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
 
-				<h1>Survey/Interviews</h1>
-				<p>To gain a better understanding of the community, I first conducted a survey to get a broad insight into users’ pain points with existing user flows. From there, I selected a few participants to interview in depth, allowing me to focus on individual </p>
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
 
-				<p>Questions:</p>
-				<ul>
-					<li>What are the primary challenges rave-goers face in their user journey for a night out?</li>
-					<li>What features would users find valuable in an rave events app?</li>
-				</ul>
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
 
-				<p>After conducting user interviews, I compiled the results below. Many participants expressed concern about the multiple apps being used in the scene, causing a disconnect or lack of communication between collectives and event-goers.</p>
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
 
-				<p>primary challenges</p>
-				<ul>
-					<li>Constant switching between multiple apps</li>
-					<li>Lack of communication between collectives + event-goers</li>
-					<li>Concerns about safety, especially within BIPOC and LGBT communities</li>
-					<li>Difficulty breaking into the scene and finding friends</li>
-					<li>Issues with refunds/ticket transfer</li>
-				</ul>
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
 
-				<p>desired features</p>
-				<ul>
-					<li>To access information quickly and efficiently</li>
-					<li>To feel safe at raves and have BIPOC and LGBT-friendly spaces</li>
-					<li>Be able to share event photos in events folders</li>
-				</ul>
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
 
-				<h1>User Personas</h1>
-				<p></p>
-					
-                <!-- <div class="media-container">
-                    <img src="img/uiux/">
-                </div> -->
-            </div>
-		</main>
-		<script src="sketch.js"></script>
-		<footer>
-			<div id="foot-box"></div>
-			<div id="font-box">
-				<p>Change Font:</p>
-				<button class="fontchange" onclick="changeFont('Arial')">Arial</button>
-				<button class="fontchange" onclick="changeFont('Courier New')">Courier New</button>
-				<button class="fontchange" onclick="changeFont('DotGothic16')">Dot Gothic 16</button>
-			</div>
-		</footer>
-		<script src="main.js"></script>
-		<script>
-			document.addEventListener('DOMContentLoaded', () => {
-			  applyStoredFont();
-			});
-		</script>
-	</body>
-</html>
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(50, 48, 44, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1a60870a-8756-8070-953e-e9bb2683f2f2" class="page sans"><header><img class="page-cover-image" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/Screenshot_2025-03-04_at_1.31.21_PM.png" style="object-position:center 83.34%"/><h1 class="page-title">evar.ware case study</h1><p class="page-description"></p></header><div class="page-body"><h2 id="1a60870a-8756-80ca-a214-d756718af098" class="block-color-red">Project Overview</h2><div id="1ac0870a-8756-80f7-8a02-c63c745849fe" class="column-list"><div id="1ac0870a-8756-800f-b533-ef2cfc558baa" style="width:25%" class="column"><figure id="1ac0870a-8756-8036-b6b7-dd5834c0bd41" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/Screenshot_2025-03-03_at_10.18.09_PM.png"><img style="width:192px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/Screenshot_2025-03-03_at_10.18.09_PM.png"/></a></figure></div><div id="1ac0870a-8756-809a-a65b-d6cb33841e40" style="width:75%" class="column"><p id="1ac0870a-8756-8053-9661-d0f312a66f3a" class=""><strong>Introduction</strong></p><p id="1a60870a-8756-80b5-b7f7-ddae172bf6b8" class="">“Evar.ware“ is a music events app that combines informational, ticketing, and social aspects into one app. It aims to give newcomers and regular ravers alike the opportunity to form and engage in communities, and share music in a way that is safe and fun.</p><hr id="1ac0870a-8756-802b-8c99-eb7dc783ec74"/><p id="1ac0870a-8756-805f-a903-f32b5f07b4aa" class=""><strong>My Role</strong></p><p id="1ac0870a-8756-8048-a938-f2c2d5747c6c" class="">UX/UI Design, Research, Visual design, Prototyping, Testing</p><p id="1ac0870a-8756-8003-81ff-d62e8cdf37c3" class=""><strong>Tools</strong></p><p id="1ac0870a-8756-8069-b498-c9d166438e8c" class="">Figma, Zoom, Google Forms</p><hr id="1ac0870a-8756-80aa-a1f4-fd56239cd03a"/><p id="1ac0870a-8756-8056-a5e4-e08734c1d659" class=""><strong>Goal</strong></p><p id="1a60870a-8756-8060-ac0d-e6eb290b849d" class="">The goal of this case study was to make a hi-fidelity prototype of an events app. In local rave communities, the informational, ticketing and social aspects are disconnected. Also, there are many miscommunications between event goers and promoters. The target audience is local music event goers and collectives. Newcomers to the local events scene were important because the barrier to entry can oftentimes be daunting. </p></div></div><p id="1ac0870a-8756-8046-ab46-ebe0b78b3eaf" class="">
+</p><h2 id="1a60870a-8756-808b-80d6-f1773807afe5" class="block-color-red">Competitive Audit</h2><div id="1ac0870a-8756-8071-b5fc-ec7d25a951a9" class="column-list"><div id="1ac0870a-8756-8093-9807-eab530708cd1" style="width:50%" class="column"><p id="1ac0870a-8756-8097-8597-fa8f2f0bbb60" class="">I began the project with an exploration of current market trends and user needs by conducting a competitive audit of three other local music events apps.  This audit gave me a sense of the pros and cons of existing apps, as well as their target audiences and value propositions.</p><p id="1af0870a-8756-800b-a2de-d399376b9ef9" class="">
+</p></div><div id="1ac0870a-8756-8084-8a7b-d851a3d322e5" style="width:50%" class="column"><figure id="1ac0870a-8756-8019-a22c-c855463971f6" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/374a3858-f9f0-4bee-8309-3ea88ee9bebe.png"><img style="width:1002px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/374a3858-f9f0-4bee-8309-3ea88ee9bebe.png"/></a></figure></div></div><p id="1ac0870a-8756-80d0-9e52-ea6365c0e004" class="">
+</p><h2 id="1ac0870a-8756-80ee-bc37-c8003bcdbd1a" class="block-color-red"><strong>Survey/Interviews</strong></h2><div id="1ac0870a-8756-8043-a5b3-c6debf8dc893" class="column-list"><div id="1ac0870a-8756-802e-8d5b-fa5afbab123a" style="width:50%" class="column"><p id="1ac0870a-8756-8030-8fa6-d75837a4cb8c" class="">To gain a better understanding of the community, I first conducted a survey to get a broad insight into users’ pain points with existing user flows. From there, I selected a few participants to interview in depth, allowing me to focus on individual experiences. I wanted to understand:</p><ul id="1ac0870a-8756-8061-ad7e-edb87364b233" class="bulleted-list"><li style="list-style-type:disc">What are the primary challenges rave-goers face in their user journey for a night out?</li></ul><ul id="1ac0870a-8756-80f8-acf8-f0acbc416586" class="bulleted-list"><li style="list-style-type:disc">What features would users find valuable in an rave events app?</li></ul><p id="1ac0870a-8756-8082-b0d9-f961a24d28b8" class="">
+</p><p id="1ac0870a-8756-80b4-946b-c20874e94551" class="">After conducting user interviews, I compiled results highlighting the most prominent challenges and features. Many participants expressed concern about the multiple apps being used in the scene, causing a disconnect or lack of communication between collectives and event-goers.</p></div><div id="1ac0870a-8756-80a8-b362-f8c92c5724b1" style="width:50%" class="column"><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ac0870a-8756-8080-b673-ee151aff3985"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ac0870a-8756-800c-9dd3-c1ca00c59f58" class=""><mark class="highlight-red"><strong>primary challenges</strong></mark></p><ul id="1ac0870a-8756-80ee-ad32-c732ea15dd1f" class="bulleted-list"><li style="list-style-type:disc">Constant switching between multiple apps</li></ul><ul id="1ac0870a-8756-80b7-ad24-c611c8d11ea5" class="bulleted-list"><li style="list-style-type:disc">Lack of communication between collectives + event-goers</li></ul><ul id="1ac0870a-8756-80fa-87dd-f466da23cf88" class="bulleted-list"><li style="list-style-type:disc">Concerns about safety, especially within BIPOC and LGBT communities</li></ul><ul id="1ac0870a-8756-8043-8f5a-ec52518882e0" class="bulleted-list"><li style="list-style-type:disc">Difficulty breaking into the scene and finding friends</li></ul><ul id="1ac0870a-8756-8096-b7c6-d1171319260f" class="bulleted-list"><li style="list-style-type:disc">Issues with refunds/ticket transfer</li></ul></div></figure><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ac0870a-8756-805a-a346-fe79d3ccccd5"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ac0870a-8756-802d-8c82-f5c5843f8502" class=""><mark class="highlight-red"><strong>desired features</strong></mark></p><ul id="1ac0870a-8756-8088-ae67-fa5134cda967" class="bulleted-list"><li style="list-style-type:disc">To access information quickly and efficiently</li></ul><ul id="1ac0870a-8756-803d-a834-ed93961b24ba" class="bulleted-list"><li style="list-style-type:disc">To feel safe at raves and have BIPOC and LGBT-friendly spaces</li></ul><ul id="1ac0870a-8756-8062-8d17-e25ef682e76f" class="bulleted-list"><li style="list-style-type:disc">Be able to share event photos in events folders</li></ul></div></figure></div></div><p id="1ac0870a-8756-8084-8bd3-c40f670a2c4b" class="">
+</p><h2 id="1ac0870a-8756-80ee-b993-c8adf21f0998" class="block-color-red">User Personas</h2><p id="1ac0870a-8756-80d4-82fc-fa5aaf26246b" class="">With these results, I created user personas to represent primary user groups. By imagining the user journey these personas, I was able to better understand the preferences of the average events app user.</p><hr id="1ac0870a-8756-800c-9ac8-fe734b87a587"/><div id="1ac0870a-8756-8085-b772-cd5ef77a84b3" class="column-list"><div id="1ac0870a-8756-8086-83ac-cf40196890d8" style="width:25%" class="column"><h2 id="1ab0870a-8756-80f4-98ad-d7b8ac2233ac" class="block-color-red">Luca</h2><figure id="1ac0870a-8756-802b-98f1-e7790052a28a" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/azhar-khairi-K18DHDQeltA-unsplash.jpg"><img style="width:132px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/azhar-khairi-K18DHDQeltA-unsplash.jpg"/></a></figure><hr id="1ab0870a-8756-80a5-8cd4-fd3fe04f91d9"/><p id="1ab0870a-8756-8070-a678-e001c015e7c1" class=""><mark class="highlight-gray"><strong>age:</strong></mark><mark class="highlight-gray"> 26</mark></p><p id="1ab0870a-8756-804b-bc30-f9242d18145b" class=""><mark class="highlight-gray"><strong>pronouns, gender:</strong></mark><mark class="highlight-gray"> he/him, trans-masculine</mark></p><p id="1ab0870a-8756-8025-8480-c4e467bdd81e" class=""><mark class="highlight-gray"><strong>occupation:</strong></mark><mark class="highlight-gray"> babysitter, student</mark></p><p id="1ab0870a-8756-8061-9c9c-e9ba5e9ff606" class=""><mark class="highlight-gray"><strong>family:</strong></mark><mark class="highlight-gray"> single, two roommates</mark></p><p id="1ab0870a-8756-806a-8704-d1dce7adde55" class=""><mark class="highlight-gray"><strong>location:</strong></mark><mark class="highlight-gray"> Chicago, IL</mark></p></div><div id="1ac0870a-8756-80ed-920f-e41a1a7c8254" style="width:75%" class="column"><p id="1ac0870a-8756-80a3-ae71-cdc677e15483" class="">
+</p><ul id="1ab0870a-8756-80c8-a1b0-e6e90dd15499" class="block-color-red_background toggle"><li><details open=""><summary><mark class="highlight-red"><strong>about</strong></mark></summary><p id="1ab0870a-8756-8027-93f1-f7d4bdc1c4d6" class="">Luca works as a babysitter and takes classes at his local community college. He lives in an apartment with two roommates. On weekends, Luca enjoys attending raves with friends, however he feels that using multiple apps leads to miscommunications between collectives and event-goers. As a transgender man, Luca is also concerned for his safety at some events. Luca sometimes has to refund tickets he bought in advance, but has had trouble doing so.</p></details></li></ul><hr id="1ab0870a-8756-80d0-a0cf-dcaadd10409f"/><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ab0870a-8756-8060-b05a-fd3b2c853904"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ab0870a-8756-8034-87f2-c271df7c3ab2" class=""><mark class="highlight-red"><strong>challenges</strong></mark></p><ul id="1ab0870a-8756-807a-b75e-c19d5cbb5bc4" class="bulleted-list"><li style="list-style-type:disc">Frustrated by the constant switching between multiple apps</li></ul><ul id="1ab0870a-8756-80a5-a754-d8e079e13182" class="bulleted-list"><li style="list-style-type:disc">Lack of communication between collectives + event-goers</li></ul><ul id="1ab0870a-8756-8069-9fa8-d8d386ec97a4" class="bulleted-list"><li style="list-style-type:disc">Issues with refunds/ticket transfer</li></ul></div></figure><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ab0870a-8756-8072-9b70-ca2145ac180d"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ab0870a-8756-801d-bcb7-d0a34e458e4b" class=""><mark class="highlight-red"><strong>goals</strong></mark></p><ul id="1ab0870a-8756-8012-9a05-f4b40de83478" class="bulleted-list"><li style="list-style-type:disc">To access information quickly and efficiently </li></ul><ul id="1ab0870a-8756-8026-af8f-dd67b44f4314" class="bulleted-list"><li style="list-style-type:disc">To feel safe at raves and have LGBT-friendly spaces</li></ul></div></figure></div></div><hr id="1ab0870a-8756-8049-8e4a-d48a67b002e0"/><div id="1ac0870a-8756-807c-b89d-c0c92943f016" class="column-list"><div id="1ac0870a-8756-80bd-9e08-cc2fa02e7c0b" style="width:25%" class="column"><h2 id="1ac0870a-8756-8025-976d-c56d5bbc0a21" class=""><mark class="highlight-red">May</mark></h2><figure id="1ac0870a-8756-8064-8ae8-d6c5f8f48e11" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/matthieu-jungfer-aYwJeBcFEQQ-unsplash.jpg"><img style="width:144px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/matthieu-jungfer-aYwJeBcFEQQ-unsplash.jpg"/></a></figure><hr id="1ac0870a-8756-80b2-9da7-db1b73ee96fc"/><p id="1ac0870a-8756-8096-8667-f22bdb482b86" class=""><mark class="highlight-gray"><strong>age:</strong></mark><mark class="highlight-gray"> 24</mark></p><p id="1ac0870a-8756-806b-a508-c0f3fbdbf6aa" class=""><mark class="highlight-gray"><strong>pronouns, gender:</strong></mark><mark class="highlight-gray"> she/her, woman</mark></p><p id="1ac0870a-8756-8089-95d0-c9c4cdfe8550" class=""><mark class="highlight-gray"><strong>occupation:</strong></mark><mark class="highlight-gray"> artist</mark></p><p id="1ac0870a-8756-803c-8b14-ef53ef7fd065" class=""><mark class="highlight-gray"><strong>family:</strong></mark><mark class="highlight-gray"> living with partner</mark></p><p id="1ac0870a-8756-80c4-abce-c163d6327780" class=""><mark class="highlight-gray"><strong>Location:</strong></mark><mark class="highlight-gray"> Chicago, IL</mark></p></div><div id="1ac0870a-8756-8047-97b3-cb05f85dc2bc" style="width:75%" class="column"><ul id="1ac0870a-8756-8039-a528-c286811d101d" class="block-color-red_background toggle"><li><details open=""><summary><mark class="highlight-red"><strong>about</strong></mark></summary><p id="1ac0870a-8756-80b1-8467-d6057c2b6f25" class="">May recently moved from New York to Chicago with her partner for an artist residency. She used to attend raves a few times a week in New York and helped create a community there, but she is unfamiliar with the local scene in Chicago. May is busy with her artist residency and wishes the process of finding events was more efficient, as she wants to make new friends. She also hopes to form a new community of rave-goers in Chicago.</p></details></li></ul><hr id="1ac0870a-8756-808b-b38a-cc253ac22552"/><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ac0870a-8756-805c-b92c-ca53b42128ab"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ac0870a-8756-8081-8161-dbc94b2d4f5b" class=""><mark class="highlight-red"><strong>challenges</strong></mark></p><ul id="1ac0870a-8756-801f-984f-da8efe3bbb11" class="bulleted-list"><li style="list-style-type:disc">Unsure how to break into the local scene</li></ul><ul id="1ac0870a-8756-80b0-8fb7-f4d1f1b6a555" class="bulleted-list"><li style="list-style-type:disc">Struggles to find time to navigate event information</li></ul></div></figure><figure class="block-color-default_background callout" style="white-space:pre-wrap;display:flex" id="1ac0870a-8756-8016-9f43-efd12611c14f"><div style="font-size:1.5em"><span class="icon">📌</span></div><div style="width:100%"><p id="1ac0870a-8756-80bd-868c-c6d3e04a5b06" class=""><mark class="highlight-red"><strong>goals</strong></mark></p><ul id="1ac0870a-8756-80bf-9674-e15d5c00b08b" class="bulleted-list"><li style="list-style-type:disc">To find raves and navigate the local music scene</li></ul><ul id="1ac0870a-8756-801d-88ff-c490824d827a" class="bulleted-list"><li style="list-style-type:disc">To make friends in a new city </li></ul><ul id="1ac0870a-8756-80af-9c79-c9f1caee06e3" class="bulleted-list"><li style="list-style-type:disc">To help form communities</li></ul></div></figure><p id="1ac0870a-8756-80cd-a78c-ef777b5183bc" class="">
+</p></div></div><h2 id="1ac0870a-8756-80fb-b22c-fad77b0c78b9" class=""><mark class="highlight-red">Scoping</mark></h2><p id="1ac0870a-8756-80cc-b917-c5f57bb136dd" class="">As an app combining multiple components, there were multiple features I wanted to incorporate.</p><div id="1ac0870a-8756-8047-a7c4-c37b561121a2" class="column-list"><div id="1ac0870a-8756-8029-a9ac-fc31f79c6760" style="width:33.33333333333333%" class="column"><h3 id="1ac0870a-8756-80c3-b71a-c70c44cba3d2" class=""><mark class="highlight-red"><strong>Pages</strong></mark></h3><ol type="1" id="1ac0870a-8756-80ef-ae6c-e9278dfa1eff" class="numbered-list" start="1"><li>Home</li></ol><ol type="1" id="1ac0870a-8756-8001-b421-cc0c6dee6469" class="numbered-list" start="2"><li>Search</li></ol><ol type="1" id="1ac0870a-8756-8055-9148-dc32d02fadfb" class="numbered-list" start="3"><li>Community<ol type="a" id="1ac0870a-8756-8069-aff4-ea0256167242" class="numbered-list" start="1"><li>My Feed</li></ol><ol type="a" id="1ac0870a-8756-80fe-bc4e-c4bba99a4314" class="numbered-list" start="2"><li>Discover</li></ol><ol type="a" id="1ac0870a-8756-8026-8173-f0bf9b5d1445" class="numbered-list" start="3"><li>Communities</li></ol></li></ol><ol type="1" id="1ac0870a-8756-805e-b2f7-ffd5cba7793b" class="numbered-list" start="4"><li>Tickets</li></ol><ol type="1" id="1ac0870a-8756-804e-81a7-fb6bda707d2a" class="numbered-list" start="5"><li>Profile<ol type="a" id="1ac0870a-8756-80db-8a87-eae97e5e2f8c" class="numbered-list" start="1"><li>Posts</li></ol><ol type="a" id="1ac0870a-8756-809a-a7be-fcb9c361c171" class="numbered-list" start="2"><li>Events</li></ol><ol type="a" id="1ac0870a-8756-8039-b083-e85446906566" class="numbered-list" start="3"><li>Albums</li></ol></li></ol></div><div id="1ac0870a-8756-80c6-b733-c2d944217786" style="width:33.33333333333334%" class="column"><h3 id="1ac0870a-8756-80a3-9ce1-fdd6944c01d5" class=""><mark class="highlight-red"><strong>Features</strong></mark></h3><ol type="1" id="1ac0870a-8756-8081-8ed4-d25bea7b5b50" class="numbered-list" start="1"><li><strong>Invite Friends</strong><ol type="a" id="1ac0870a-8756-80f9-bb5b-c78ee84e1ae6" class="numbered-list" start="1"><li>This feature allows users to send an event invitation to friends through a private message. It indicates the number of people going, maybe, or not attending.</li></ol></li></ol><ol type="1" id="1ac0870a-8756-8080-880b-e725b1e3be8a" class="numbered-list" start="2"><li><strong>Share Event</strong><ol type="a" id="1ac0870a-8756-80b2-88ad-e01620fc2cf1" class="numbered-list" start="1"><li>This feature allows users to share an event with friends through private messages.</li></ol></li></ol><ol type="1" id="1ac0870a-8756-806f-94bf-f39c838b796e" class="numbered-list" start="3"><li><strong>Updates Channel</strong><ol type="a" id="1ac0870a-8756-8041-b784-e10b4a403bf8" class="numbered-list" start="1"><li>Users will purchase a ticket, giving them access to an event updates channel. Collectives can give users</li></ol></li></ol></div><div id="1ac0870a-8756-8024-8a8e-e3c2ca0dcc9b" style="width:33.333333333333336%" class="column"><p id="1ac0870a-8756-8021-af62-d9babf2daa3e" class="">
+</p><p id="1ac0870a-8756-80f6-b356-dbd738d20f69" class="">
+</p><ol type="1" id="1ac0870a-8756-80a3-af12-df76755ed3a3" class="numbered-list" start="4"><li><strong>Make Post</strong><ol type="a" id="1ac0870a-8756-8069-bad0-e104fa83f784" class="numbered-list" start="1"><li>This lets users post a short message, which can be liked, reposted, commented on, and shared.</li></ol></li></ol><ol type="1" id="1ac0870a-8756-801a-b1c3-ca39c4ee31a1" class="numbered-list" start="5"><li><strong>Comment</strong><ol type="a" id="1ac0870a-8756-8025-83a5-c54430e6e60a" class="numbered-list" start="1"><li>Users can comment on posts.</li></ol></li></ol><ol type="1" id="1ac0870a-8756-80d1-8a45-d9df1520286f" class="numbered-list" start="6"><li><strong>Request Community</strong><ol type="a" id="1ac0870a-8756-80d9-85d9-c4e978836210" class="numbered-list" start="1"><li>Certain communities can choose to be request only, as this would ensure safety of community members.</li></ol><p id="1ac0870a-8756-80f2-b425-f3ad74da59a7" class="">
+</p></li></ol></div></div><hr id="1ac0870a-8756-804a-a200-fd7f810653cb"/><h2 id="1ac0870a-8756-8019-96d3-efdef5daaba0" class="block-color-red">Paper Wireframes</h2><p id="1ac0870a-8756-80ce-8c1a-e6234b8aea3b" class="">After deciding the scope and user flow of the app, I started with low-fidelity wireframes to explore different layouts and navigation options. These went through multiple iterations. I selected the components most suitable for a given page and combined them into new wireframes. </p><div id="1b00870a-8756-805c-a8ce-c0fe2cf4afee" class="column-list"><div id="1b00870a-8756-80c0-84a4-d699d7cc7f7d" style="width:20.833333333333332%" class="column"><figure id="1b00870a-8756-8005-ac52-e1cec8928e10" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/IMG_0414.jpg"><img style="width:2244px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/IMG_0414.jpg"/></a></figure></div><div id="1b00870a-8756-80e2-8e9f-c08df40e33d3" style="width:37.5%" class="column"><figure id="1ac0870a-8756-80a2-a0b5-e3b9bf0fdcc4" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/bf0bfa89-0f23-4d8b-b848-7b441093132d.png"><img style="width:672px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/bf0bfa89-0f23-4d8b-b848-7b441093132d.png"/></a></figure></div><div id="1b00870a-8756-8071-acc0-cc6c6bb240c8" style="width:41.66666666666664%" class="column"><figure id="1ac0870a-8756-808b-9190-de493c0d13ab" class="image"><a href="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/IMG_8342.jpg"><img style="width:672px" src="evar%20ware%20case%20study%201a60870a87568070953ee9bb2683f2f2/IMG_8342.jpg"/></a></figure></div></div><p id="1ac0870a-8756-8029-84a8-e5873c13f0d7" class="">
+</p><h2 id="1ac0870a-8756-801f-93ce-caec2c32e050" class="block-color-red">Prototype &amp; Branding</h2><p id="1b00870a-8756-80cc-967d-ecda83126906" class="">Finally, after deciding on final wireframes, I translated this into a lo-fi prototype in Figma. This prototype mainly focused on the task flow of each feature I wanted to implement. After some usability testing, I moved on to the branding of the app. For the color palette, a dark grey and pale red were used. These colors are often seen on posters and flyers in the rave scene and were used to convey a sense of familiarity or trustability, as they are associated with the music scene as well as other events apps. The choice to have uploaded event flyers communicate most of the information was also important to preserve the sense of community and rave culture.</p><h2 id="1b00870a-8756-809c-a59f-c00aba7cf094" class="block-color-red">Conclusion</h2><p id="1b00870a-8756-80d5-9786-e78074a04d1f" class="">This project was highly informative in designing an app from scratch. Being able to solve a real-world problem and speaking with individuals in the community throughout the process was a deeply enriching experience that reinforced my appreciation of collaboration, empathy, and impact in creative problem-solving.</p><div id="1ac0870a-8756-8026-9bf8-dc385b6814ff" class="column-list"><div id="1ac0870a-8756-80d0-a20c-d4d7937cea40" style="width:17.5%" class="column"><p id="1ac0870a-8756-801a-8baf-cc18ecf581e7" class=""><strong>Home</strong></p><figure id="1ac0870a-8756-8015-bbad-e3ef7b1ddfa1"><div class="source">https://www.figma.com/proto/mX4VVm2jsWdG4EyqhwlMKz/Evar-Ware?page-id=0%3A1&amp;node-id=1-7&amp;viewport=-6231%2C-3277%2C1.28&amp;t=F1opHhI2w3dGnwQD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A7&amp;show-proto-sidebar=1</div></figure><p id="1ac0870a-8756-8062-b79f-fa26325477f7" class="">
+</p></div><div id="1ac0870a-8756-8057-87ef-ef8a4ba6b62f" style="width:17.5%" class="column"><p id="1ac0870a-8756-80de-bcce-cd1f41bee12e" class=""><strong>Event</strong></p><figure id="1ac0870a-8756-8063-9be4-f005aa1a3321"><div class="source">https://www.figma.com/proto/mX4VVm2jsWdG4EyqhwlMKz/Evar-Ware?page-id=0%3A1&amp;node-id=2045-10430&amp;viewport=-6231%2C-3277%2C1.28&amp;t=F1opHhI2w3dGnwQD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=2045%3A10430&amp;show-proto-sidebar=1</div></figure></div><div id="1ac0870a-8756-803c-9f2b-e1073cb2576f" style="width:20%" class="column"><p id="1ac0870a-8756-8026-8ce0-e9c042b16f85" class=""><strong>Request Community</strong></p><figure id="1ac0870a-8756-807c-bc23-d8a1edbc1454"><div class="source">https://www.figma.com/proto/mX4VVm2jsWdG4EyqhwlMKz/Evar-Ware?page-id=0%3A1&amp;node-id=2254-3409&amp;viewport=-6231%2C-3277%2C1.28&amp;t=F1opHhI2w3dGnwQD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=2254%3A3409&amp;show-proto-sidebar=1</div></figure><p id="1ac0870a-8756-805e-99cb-f0daefc49b2e" class="">
+</p></div><div id="1ac0870a-8756-805e-b24d-dce68c715b26" style="width:20%" class="column"><p id="1ac0870a-8756-80bb-8417-e477cfa4c93f" class=""><strong>Make Post</strong></p><figure id="1ac0870a-8756-8024-aa44-c982f675af79"><div class="source">https://www.figma.com/proto/mX4VVm2jsWdG4EyqhwlMKz/Evar-Ware?page-id=0%3A1&amp;node-id=1-12&amp;viewport=-6231%2C-3277%2C1.28&amp;t=F1opHhI2w3dGnwQD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=1%3A12&amp;show-proto-sidebar=1</div></figure><p id="1ac0870a-8756-80de-ac8d-d9a85aa0d0a7" class="">
+</p></div><div id="1ac0870a-8756-8089-9d0f-f7499727beab" style="width:25.00000000000001%" class="column"><p id="1ac0870a-8756-80f0-b986-cb49fa435536" class=""><strong>Comment</strong></p><figure id="1ac0870a-8756-80a5-88a3-ce182b3e4a41"><div class="source">https://www.figma.com/proto/mX4VVm2jsWdG4EyqhwlMKz/Evar-Ware?page-id=0%3A1&amp;node-id=2226-2215&amp;viewport=-6231%2C-3277%2C1.28&amp;t=F1opHhI2w3dGnwQD-1&amp;scaling=scale-down&amp;content-scaling=fixed&amp;starting-point-node-id=2226%3A2215&amp;show-proto-sidebar=1</div></figure><p id="1ac0870a-8756-80d6-b745-f48d4ef03b4c" class="">
+</p></div></div><p id="1ac0870a-8756-8020-9dc6-d3ab9fbcba85" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>

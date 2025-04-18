@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    	<title>uiux</title>
+
+    	<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=DotGothic16" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" />
+	</head>
+
+	<body class="fontchange">
+		<div id="head-box"></div>
+		<header>
+			<div>
+				<a id="title" href="index.html"><em>ying ruan</em></a>
+				<nav>
+					<div>
+						<button type="button" class="collapsible fontchange"><li><span>visual art</span></li></button>
+						<ul class="content">
+							<li><a href="thesis.html">BA thesis</a></li>
+							<li><a href="posthuman.html">a posthuman reconstruction</a></li>
+							<li><a href="addition.html">additional works</a></li>
+						</ul>
+						<button type="button" class="collapsible fontchange"><li><span>ui/ux, web design</span></li></button>
+						<ul class="content">
+							<li><a href="https://allwallsfall.com/" target="_blank">ALL WALLS FALL</a></li>
+							<li><a id="selected" href="https://yingruan.notion.site/evar-ware-case-study-1a60870a87568070953ee9bb2683f2f2?pvs=4" target="_blank">evar.ware </a></li>
+							<li><a href="https://ucjhistory.com/" target="_blank">Chicago Journal of History</a></li>
+							<li><a href="https://housecomfort.us/" target="_blank">House Comfort</a></li>
+							<li><a href="melo.html">melo</a></li>
+						</ul>
+						<button type="button" class="collapsible fontchange"><li><span>fashion</span></li></button>
+						<ul class="content">
+							<li><a href="recompose.html">compose, decompose, recompose</a></li>
+							<li><a href="vessel.html">visceral binaries of the female vessel</a></li>
+						</ul>
+						<li><a href="contact.html"><span>contact</span></a></li>
+					</div>
+				</nav>
+			</div>
+		</header>
+
+		<main>
+			<img class="full-img" src="img/uiux/evarware/logo.png" alt="image of evar.ware app logo">
+            <div class="work">
+				<h1><b>Project Overview</b></h1>
+				<div class="media-container">
+					<img class="full-img phone" src="img/uiux/evarware/home.png" alt="image of evar.ware app home page">
+					<div class="add-text">
+						<h3><b>Introduction</b></h3>
+						<p>“Evar.ware“ is a music events app that combines informational, ticketing, and social aspects into one app. It aims to give newcomers and regular ravers alike the opportunity to form and engage in communities, and share music in a way that is safe and fun.</p>
+						<h3><b>My Role</b></h3>
+						<p>UX/UI Design, Research, Visual design, Prototyping, Testing</p>
+						<h3><b>Tools</b></h3>
+						<p>Figma, Zoom, Google Forms</p>
+						<h3><b>Goal</b></h3>
+						<p>The goal of this case study was to make a hi-fidelity prototype of an events app. In local rave communities, the informational, ticketing and social aspects are disconnected. Also, there are many miscommunications between event goers and promoters. The target audience is local music event goers and collectives. Newcomers to the local events scene were important because the barrier to entry can oftentimes be daunting. </p>
+
+
+					</div>
+				</div>
+
+				<h1>Survey/Interviews</h1>
+				<p>To gain a better understanding of the community, I first conducted a survey to get a broad insight into users’ pain points with existing user flows. From there, I selected a few participants to interview in depth, allowing me to focus on individual </p>
+
+				<p>Questions:</p>
+				<ul>
+					<li>What are the primary challenges rave-goers face in their user journey for a night out?</li>
+					<li>What features would users find valuable in an rave events app?</li>
+				</ul>
+
+				<p>After conducting user interviews, I compiled the results below. Many participants expressed concern about the multiple apps being used in the scene, causing a disconnect or lack of communication between collectives and event-goers.</p>
+
+				<p>primary challenges</p>
+				<ul>
+					<li>Constant switching between multiple apps</li>
+					<li>Lack of communication between collectives + event-goers</li>
+					<li>Concerns about safety, especially within BIPOC and LGBT communities</li>
+					<li>Difficulty breaking into the scene and finding friends</li>
+					<li>Issues with refunds/ticket transfer</li>
+				</ul>
+
+				<p>desired features</p>
+				<ul>
+					<li>To access information quickly and efficiently</li>
+					<li>To feel safe at raves and have BIPOC and LGBT-friendly spaces</li>
+					<li>Be able to share event photos in events folders</li>
+				</ul>
+
+				<h1>User Personas</h1>
+				<p></p>
+					
+                <!-- <div class="media-container">
+                    <img src="img/uiux/">
+                </div> -->
+            </div>
+		</main>
+		<script src="sketch.js"></script>
+		<footer>
+			<div id="foot-box"></div>
+			<div id="font-box">
+				<p>Change Font:</p>
+				<button class="fontchange" onclick="changeFont('Arial')">Arial</button>
+				<button class="fontchange" onclick="changeFont('Courier New')">Courier New</button>
+				<button class="fontchange" onclick="changeFont('DotGothic16')">Dot Gothic 16</button>
+			</div>
+		</footer>
+		<script src="main.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', () => {
+			  applyStoredFont();
+			});
+		</script>
+	</body>
+</html>
