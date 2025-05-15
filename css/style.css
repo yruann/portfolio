@@ -56,18 +56,16 @@ button {
 }
 
 header {
-	background-color: #f5f5f5;
+  	overflow-wrap: break-word;
+  	background-color: #f5f5f5;
 	position: fixed;
 	width: 17vw;
 	padding: 1%;
 	border: .5px solid #2D2C31;
-	display: inline-block;
 	height: 82vh;
-	vertical-align: middle;
 	z-index: 31;
 }
 header > div {
-	position: fixed;
 	width: 17vw;
 	min-height: 20vh;
 	max-height: 82vh;
@@ -87,7 +85,6 @@ nav > div {
 	list-style-position: inside;
 	padding-left: 7%;
 	line-height: 1.75;
-	display: inline-block;
 	margin-top: 5%;
 }
 li a {
@@ -209,7 +206,7 @@ video.hover-media {
     height: auto;
     margin: 1.2%;
 }
-video, iframe {
+video, .vid {
     width: 40vw;
 	height: 22.5vw;
 }
@@ -274,7 +271,7 @@ video, iframe {
 	.media-container img {
 		width: 40%;
 	}
-	video, iframe {
+	video, .vid {
 		width: 50vw;
 		height: 28.125vw;
 	}
@@ -296,7 +293,7 @@ video, iframe {
 	.media-container img {
 		width: 40%;
 	}
-	video, iframe {
+	video, .vid {
 		width: 50vw;
 		height: 28.125vw;
 	}
@@ -309,18 +306,18 @@ video, iframe {
 }
 @media screen and (max-width: 820px) {
 	body{
-		width: 100vw;
+		width: 100%;
 	}
 	header,
 	header > div, 
 	nav{
-		margin: 0 auto;
 		position: relative;
-		height:fit-content;
+		height: fit-content;
 		width: fit-content;
+
 	}
-	header{
-		left: 23vw;
+	body >{
+		margin: 0 auto;
 	}
 
 	main{
@@ -329,5 +326,25 @@ video, iframe {
 	}
 	#word-bank-selection{
 		top: 70vh;
+	}
+	div .content,
+	.content:nth-child(4) li:nth-child(1),
+	.content:nth-child(4) li:nth-child(2),
+	.content:nth-child(4) li:nth-child(3),
+	.content:nth-child(4) li:nth-child(4){
+		list-style: none;
+	}
+	/* .content li{
+		padding: 10px;
+	} */
+	div .content{
+		padding-right: 5vw;
+	}
+	div .content li {
+		width: 30vw;
+		padding: 1vh .75vw .5vh .75vw;
+	}
+	div .content li a {
+		overflow-wrap: break-word;
 	}
 }

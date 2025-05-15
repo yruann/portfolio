@@ -1,0 +1,32 @@
+#head-box, #foot-box {
+   display: none;
+}
+h1{
+   text-decoration: none;
+}
+#home-view{
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    border: none;
+}
+main{
+    top: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+@media screen and (max-width: 1200px) {
+
+}
+
+@media screen and (max-width: 900px) {
+    #home-view{
+        position: relative;
+    }
+}

@@ -20,28 +20,6 @@ img:hover{
     drop-shadow(-3px -3px 0px #f5f5f5);
     z-index: 28;
 }
-/* window */
-/* #window {
-   background-color: #f5f5f5;
-   width: 40vw;
-   height: 70vh;
-   padding: 5%;
-   margin-bottom: 2vh;
-   border: .5px solid #2D2C31;
-}
-
-.window-bar div{
-   display: inline;
-   margin: 0;
-   padding: 0% 4% 0% 4%;
-   background-color: #ffffff;
-   border: .5px solid #2D2C31;
-}
-.window-bar {
-   width: 7vw;
-   top: .5vh;
-} */
-
 #recomp {
 	position: fixed;
 	top: 72vh;
@@ -123,13 +101,11 @@ img:hover{
    width: 80%;
    text-align: center;
 }
-#head-box, #foot-box {
+
+
+#head-box, #foot-box{
    display: none;
 }
-h1{
-   text-decoration: none;
-}
-
 @media screen and (max-width: 900px) {
    #word-bank-selection{
       top: 77vh;
