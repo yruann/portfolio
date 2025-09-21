@@ -7,14 +7,14 @@
     	<title>ying!</title>
 
     	<link rel="stylesheet" type="text/css" href="css/style.css">
-		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<link rel="stylesheet" type="text/css" href="css/home.css">
 		<link href="https://fonts.googleapis.com/css?family=DotGothic16" rel="stylesheet" />
 		<link href="https://fonts.googleapis.com/css?family=Syne+Mono" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
 		<script defer src="script.js"></script>
 	</head>
 
 	<body class="fontchange">
-		<div id="head-box"></div>
 		<header>
 			<div>
 				<a id="title" href="index.html"><em>annie ruan</em></a>
@@ -31,7 +31,7 @@
 							<li><a href="https://allwallsfall.com/" target="_blank">ALL WALLS FALL</a></li>
 							<li><a href="evarware.html" target="_blank">evar.ware </a></li>
 							<li><a href="https://ucjhistory.com/" target="_blank">Chicago Journal of History</a></li>
-							<li><a href="https://housecomfort.us/" target="_blank">House Comfort</a></li>
+							<!-- <li><a href="https://housecomfort.us/" target="_blank">House Comfort</a></li> -->
 							<li><a href="melo.html">melo</a></li>
 						</ul>
 						<button type="button" class="collapsible fontchange"><li><span>fashion</span></li></button>
@@ -46,37 +46,12 @@
 		</header>
 
 		<main>
-			<iframe id="home-view" src="home.html" title="compose"></iframe>
-			<!-- <h1>scroll down to compose!</h1>
-			<div id="sentence-container" class="container">
-				<div id="sentence" class="sentence"></div>
-			</div>
-			<div class="home-media">
-				<img id="m1" class="media" src="img/home/1.png">
-				<img id="m2" class="media" src="img/home/2.png">
-				<img id="m3" class="media" src="img/home/3.png">
-				<img id="m4" class="media" src="img/home/4.png">
-				<img class="n media" src="img/home/5.png">
-				<img class="n media" src="img/home/6.png">
-				<img class="n media" src="img/home/7.png">
-				<img class="n media" src="img/home/8.png">
-				<img class="n media" src="img/home/9.png">
-				<img class="n media" src="img/home/10.png">
-				<img class="n media" src="img/home/11.png">
-			</div>
-			<div id="word-bank-selection" class="container">
-				<h1>all the words</h1>
-				<div class="word-bank">
-					<div id="w1" class="words"></div>
-				</div>
-			</div> -->
+			<iframe id="viewframe" src="viewframe.html" title="compose"></iframe>
 		</main>
-		<!-- <footer>
-			<div id="foot-box"></div>
-			<button id="recomp" class="fontchange" onclick="recompose()">Recompose!</button>
-			<div id="font-box">
+        <footer>
+            <div id="font-box">
 				<p> Change Font:</p>
-				<button class="fontchange" onclick="changeFont('Arial')">Arial</button>
+				<button class="fontchange" onclick="changeFont('Roboto')">Roboto</button>
 				<button class="fontchange" onclick="changeFont('Courier New')">Courier New</button>
 				<button class="fontchange" onclick="changeFont('DotGothic16')">Dot Gothic 16</button>
 			</div>
@@ -86,6 +61,6 @@
 			document.addEventListener('DOMContentLoaded', () => {
 			  applyStoredFont();
 			});
-		</script> -->
+		</script> 
 	</body>
 </html>
